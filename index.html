@@ -9,103 +9,207 @@
 	<meta name="viewport" content="width = device-width, initial-scale = 1">
 	<meta http-equiv="X-UA-compatible" content="IE=edge">
 	<link rel="icon" type="image/x-icon" href="static/favicon.ico">
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css-data.css"/>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
-	<style type="text/css">
+</head>
+<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
-	</style>
-<body style="background:url('static/background.jpg'); background-color: black; background-position: center; background-repeat: no-repeat; background-size: cover; color: white; background-attachment: fixed;">
-	<div style="font-size: 15px; z-index: 100;">	
-		<div id="navBar" class="topnav" style=" align-self: center; text-align:center; display: block; position: fixed; padding:1%; margin:auto; width: 100%; background-color: black;">
-			<ul style="display: inline; list-style-type: none; color: white; font-family: 'Josefin Sans">
-				<li style="display: inline;" class="container text-center" id="home">
-					<a href="#" style="color: yellow;">
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+		body{
+			background:url('static/background.jpg');
+			background-color: black;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+			background-attachment: fixed;
+		}
+		#div1{
+			font-size: 15px; 
+			z-index: 100;
+		}
+		.width-adj{
+			width: 95%;
+			margin: 0px auto;
+		}
+		.animate:hover{
+			animation-name: animation;
+			animation-duration: 200ms;
+			animation-fill-mode: forwards;
+		}
+		@keyframes animation {
+			0% {
+				color:yellow;
+			}
+			100% {
+				color:white;
+			}
+		}
+		.animate {
+			padding: 5px;
+			color:yellow;
+		}
+		#navBar {
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+			animation-duration: 100ms;
+			align-self: center; 
+			text-align:center; 
+			display: block; 
+			position: fixed; 
+			padding:1%; 
+			margin:auto; 
+			width: 100%; 
+			background-color: black;
+		}
+		li {
+			display: inline;
+		}
+		.ul1 {
+			display: inline; 
+			list-style-type: none; 
+			color: white; 
+			font-family: 'Josefin Sans';	
+		}
+		h1 {
+			font-size: 100px; 
+			text-align: center; 
+			z-index: -100; 
+			color:yellow; 
+			font-family:'Fredericka the Great';
+		}
+		img{
+			float:right; 
+			border: 1px; 
+			border-radius: 200px; 
+			width: 400px; 
+			padding: 0.5%; 
+			text-align: center; 
+			display:inline; 
+			filter: grayscale(100%); 
+			z-index: -100;
+		}
+		code {
+			float:right;
+			font-size:25px;
+			text-align:justify;
+			color:white;
+			display:inline;
+			align-items:right; 
+			margin: auto;
+			font-family: 'Josefin Sans', sans-serif; 
+			z-index: -100; 
+			padding-top: 0.5%; 
+			padding-bottom: 0.5%;
+		}
+		i {
+			color:white; 
+			padding: 0.25%; 
+			margin : 0.5%; 
+			margin-top: 5%; 
+			font-size: 40px;
+		}
+		.ul2 {
+			display: inline; 
+			list-style-type: none; 
+			font-size: 25px; 
+			text-align: center; 
+			color:white; 
+			padding: 2.5%;
+		}
+</style>
+<body>
+	<nav class="navbar navbar-fixed-top" id="div1">	
+		<scroll-container id="navBar">
+			<ul class="ul1">
+				<li class="container text-center">
+					<a href="#" class="animate">
 					Home
 					</a>
 				</li>
-				<li style="display: inline;" class="container text-center" id="blog">
-					<a target="_blank" href="https://medium.com/@animesh.srivastava.1999" style="color: yellow;">
+				<li class="container text-center">
+					<a target="_blank" class="animate" href="https://medium.com/@animesh.srivastava.1999">
 					Blog
 					</a>
 				</li>
-				<li style="display: inline;" class="container text-center" id="aboutLink">
-					<a href="#about" style="color: yellow; ">
+				<li class="container text-center">
+					<a href="#about" class="animate">
 					About Me
 					</a>
 				</li>
-				<li style="display: inline;" class="container text-center" id="contactLink">
-					<a href="#contact" style="color: yellow;">
+				<li class="container text-center">
+					<a href="#contact" class="animate">
 					Contact
 					</a>
 				</li>
 			</ul>			
-		</div>
-	</div>
+		</scroll-container>
+	</nav>
 </br></br></br></br>
 	<div>
-		<div style="width: 92%; margin:0px auto;">
-			<div style="width: 99%; margin:0px auto;">
+		<div class="width-adj">
+			<div class="width-adj">
 					<div id="main-content" class="container text-center page-header">
-						<h1 style="font-size: 100px; text-align: center; z-index: -100; text-shadow: 2px; color:yellow; font-family:'Fredericka the Great';">Animesh Srivastava</h1></br></br></br>
+						<h1>Animesh Srivastava</h1></br></br></br>
 					</div>
 				<div class = "row">
 					<div id="image" style="display: inline" class="col-lg-4 col-md-4 col-sm-4 col-xs-6">
-						<img style=" float:right; border: 1px; border-radius: 200px; width: 400px; padding: 0.5%; text-align: center; display:inline; filter: grayscale(100%); z-index: -100;" title="Animesh Srivastava" src="static/image.jpg">
+						<img title="Animesh Srivastava" src="static/image.jpg">
 					</div>
 					<div id="about" style="display:inline;" class="col-lg-8 col-md-8 col-sm-8 col-xs-6">
 							</br>	
 							</br>
-						<code class="container" style="float:right;font-size:25px;text-align:justify;color:white;display:inline;align-items:right; margin: auto;font-family: 'Josefin Sans', sans-serif; z-index: -100; padding-top: 0.5%; padding-bottom: 0.5%">
+						<code class="container">
 							I am an 18 year old pursuing Mechanical Engineering from BITS Hyderabad.</br>In my free time, I like to fulfill my never-ending thirst for knowledge by exploring and learning new fields of study as much as I can. I am especially drawn towards Development which is wildly different from my Major.</br> My Major is concerned with machines and engines and all that mechanical stuff, as the name suggests. That draws my interest as well, I like machines. But what draws me towards computers is the fascination I've always had with electronics and how to handle it. To type some things and have the output appear magically in front of me really intrigues me as a child. However, that was not as easy as it sounded (not surprisingly). Anyway, apart from this, Graphic Designing is my another marketable hobby. I am currently working as Head of Design for a local firm Rio. When I am not not-wasting-time, I waste my time reading articles and browsing memes on the internet, like almost every other teenager. </br> I aspire to become a better human being than I am today. You can reach me <a href="#contact" style="color:white;">here.</a>
 						</code>
 					</div>
 				</div>
 				</br></br></br>
-					<div id="contact"  class= " container text-center" style="text-align: center; width: 100%; margin: auto;">
+					<div id="contact"  class= "container text-center" style="text-align: center; width: 100%; margin: auto;">
 
-						<ul style="display: inline; list-style-type: none; font-size: 25px; text-align: center; color:white; padding: 2.5%;">
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
+						<ul class="ul2">
+							<li class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
 								<a href="mailto:animesh.srivastava.1999@gmail.com?subject=From%20The%20Website" target="_blank">
-									<i class="fa fa-google" style="padding:5px;color:white;margin:10px; margin-top: 100px; font-size: 40px; ">
+									<i class="fa fa-google">
 										
 									</i>
 								</a>
 							</li>
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6 " >
+							<li class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6 " >
 								<a href="https://www.github.com/animesh-srivastava" target="_blank">
-									<i class="fa fa-github" style="color:white; padding: 0.25%; margin : 0.5%; margin-top: 5%; font-size: 40px;">
+									<i class="fa fa-github">
 										
 									</i>
 								</a>
 							</li>
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
+							<li class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
 								<a href="https://www.facebook.com/animesh.s.1999" target="_blank">
-									<i class="fa fa-facebook" style="color:white; padding: 0.25%; margin : 0.5%; margin-top: 5%; font-size: 40px;">
+									<i class="fa fa-facebook">
 										
 									</i>
 								</a>
 							</li>
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
+							<li class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
 								<a href="https://www.instagram.com/lord.shezza" target="_blank">
-									<i class="fa fa-instagram" style="color:white; padding: 0.25%; margin : 0.5%; margin-top: 5%; font-size: 40px;">
+									<i class="fa fa-instagram">
 										
 									</i>
 								</a>
 							</li>
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
+							<li class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
 								<a href="https://www.twitter.com/animsriv" target="_blank">
-									<i class="fa fa-twitter" style="color:white; padding: 0.25%; margin : 0.5%; margin-top: 5%; font-size: 40px;">
+									<i class="fa fa-twitter">
 										
 									</i>
 								</a>
 							</li>
-							<li style="display: inline;" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
+							<li" class="container text-center col-lg-2 col-md-2 col-sm-4 col-xs-6" >
 								<a href="https://www.linkedin.com/in/animesh-srivastava-87220952" target="_blank">
-									<i class="fa fa-linkedin" style="color:white;  padding: 0.25%; margin : 0.5%; margin-top: 5%; font-size: 40px;">
+									<i class="fa fa-linkedin">
 										
 									</i>
 								</a>
