@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+	@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+		body{
+			background:url('static/background.jpg');
+			background-color: black;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: white;
+			background-attachment: fixed;
+		}
+		#div1{
+			font-size: 15px; 
+			z-index: 100;
+		}
+		.width-adj{
+			width: 95%;
+			margin: 0px auto;
+		}
+		.animate:hover{
+			animation-name: animation;
+			animation-duration: 200ms;
+			animation-fill-mode: forwards;
+		}
+		@keyframes animation {
+			0% {
+				color:yellow;
+			}
+			100% {
+				color:white;
+			}
+		}
+		.animate {
+			padding: 5px;
+			color:yellow;
+		}
+		#navBar {
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+			animation-duration: 100ms;
+			align-self: center; 
+			text-align:center; 
+			display: block; 
+			position: fixed; 
+			padding:1%; 
+			margin:auto; 
+			width: 100%; 
+			background-color: black;
+		}
+		li {
+			display: inline;
+		}
+		.ul1 {
+			display: inline; 
+			list-style-type: none; 
+			color: white; 
+			font-family: 'Josefin Sans';	
+		}
+		h1 {
+			font-size: 100px; 
+			text-align: center; 
+			z-index: -100; 
+			color:yellow; 
+			font-family:'Fredericka the Great';
+		}
+		img{
+			float:right; 
+			border: 1px; 
+			border-radius: 200px; 
+			width: 400px; 
+			padding: 0.5%; 
+			text-align: center; 
+			display:inline; 
+			filter: grayscale(100%); 
+			z-index: -100;
+		}
+		code {
+			float:right;
+			font-size:25px;
+			text-align:justify;
+			color:white;
+			display:inline;
+			align-items:right; 
+			margin: auto;
+			font-family: 'Josefin Sans', sans-serif; 
+			z-index: -100; 
+			padding-top: 0.5%; 
+			padding-bottom: 0.5%;
+		}
+		i {
+			color:white; 
+			padding: 0.25%; 
+			margin : 0.5%; 
+			margin-top: 5%; 
+			font-size: 40px;
+		}
+		.ul2 {
+			display: inline; 
+			list-style-type: none; 
+			font-size: 25px; 
+			text-align: center; 
+			color:white; 
+			padding: 2.5%;
+		}
